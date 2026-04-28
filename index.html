@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Redimi2 - Inicio</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background: #f4f4f4; color: #333; }
+        
+        nav { background: #000; padding: 15px; text-align: center; position: sticky; top: 0; z-index: 1000; }
+        nav a { color: white; text-decoration: none; margin: 0 20px; font-weight: bold; text-transform: uppercase; }
+        nav a:hover { color: #ffcc00; }
+        
+        .container { width: 85%; margin: auto; background: white; padding: 30px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        header { text-align: center; padding: 20px; border-bottom: 3px solid #000; margin-bottom: 30px; }
+
+        .bio-section { display: flex; gap: 30px; margin-bottom: 50px; align-items: center; }
+        .bio-photos { flex: 1; display: flex; flex-direction: column; gap: 10px; }
+        .bio-photos img { width: 100%; border-radius: 4px; }
+        .bio-text { flex: 2; text-align: justify; line-height: 1.6; }
+
+        /* SECCIÓN DE GIRAS */
+        .gira-section { margin-top: 50px; margin-bottom: 50px; }
+        .gira-section h2 { border-left: 5px solid #000; padding-left: 15px; margin-bottom: 20px; }
+        
+        .tabla-gira { width: 100%; border-collapse: collapse; background: #fff; }
+        .tabla-gira th { background-color: #000; color: white; padding: 15px; text-transform: uppercase; font-size: 13px; }
+        .tabla-gira td { border: 1px solid #eee; padding: 12px; text-align: center; vertical-align: middle; }
+        .tabla-gira tr:nth-child(even) { background-color: #fafafa; }
+        
+        .img-gira { 
+            width: 80px; 
+            height: 80px; 
+            object-fit: cover; 
+            border-radius: 4px; 
+            display: block; 
+            margin: auto;
+            border: 1px solid #ddd;
+        }
+
+        .discografia-preview { margin-top: 50px; }
+        .album-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-top: 20px; }
+        .album-item { text-align: center; }
+        .album-item img { width: 100%; cursor: pointer; border-radius: 8px; transition: transform 0.3s; border: 1px solid #ddd; }
+        .album-item img:hover { transform: scale(1.05); box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+        
+        /* Quitar el subrayado de los links en las imágenes */
+        .album-item a { text-decoration: none; color: inherit; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="Redimi2.html">INICIO</a>
+    <a href="#discografia">DISCOGRAFÍA</a>
+</nav>
+
+<div class="container">
+    <header>
+        <h1>REDIMI2</h1>
+    </header>
+
+    <section class="bio-section">
+        <div class="bio-photos">
+            <img src="https://www.redimi2web.com/wp-content/uploads/2025/05/bio-bg.png">
+        </div>
+        <div class="bio-text">
+          <h2>Biografía</h2>
+          <p>Willy González Cruz, mejor conocido como Redimi2, es un rapero dominicano nacido el 3 de junio de 1979 que se ha consolidado como el máximo referente del hip-hop cristiano en español. Tras una juventud difícil marcada por las adicciones, su conversión al cristianismo en 1999 transformó su vida y su arte, llevándolo a lanzar en el año 2000 el álbum Combinación Mortal, el primero de una prolífica discografía que incluye éxitos como Hasta los Dientes, Phenomenon y Pura Sal. A lo largo de más de dos décadas de trayectoria, ha destacado por su impecable técnica lírica, su capacidad para fusionar el rap con el trap y el reggaetón, y su compromiso por transmitir mensajes de fe y valores sociales a la juventud. Actualmente, reside junto a su esposa Daliza Contreras y su hija Samantha, manteniendo una presencia global a través de giras internacionales y constantes colaboraciones con otros grandes exponentes de la música urbana. </p>
+        </div>
+    </section>
+
+    <section id="giras" class="gira-section">
+        <h2>Algunas Giras</h2>
+        <table class="tabla-gira">
+            <thead>
+                <tr>
+                    <th>Fecha y Lugar</th>
+                    <th>Nombre de la Gira</th>
+                    <th>Imagen</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2011-2012 / Latinoamérica y EE.UU.</td>
+                    <td>Gira Exterminador</td>
+                    <td><img src="exterminador.jpg" alt="exterminador" class="img-gira"></td>
+                </tr>
+                <tr>
+                    <td>2014-2015 / América Latina</td>
+                    <td>Tour Operación Mundial</td>
+                    <td><img src="mundial.jpg" alt="mundial" class="img-gira"></td>
+                </tr>
+                <tr>
+                    <td>2018-2019 / EE.UU., PR y Argentina</td>
+                    <td>La Resistencia Tour</td>
+                    <td><img src="resistencia.jpg" alt="Resistencia" class="img-gira"></td>
+                </tr>
+                <tr>
+                    <td>2023-2024 / Europa y Rep. Dom.</td>
+                    <td>Maverick Tour</td>
+                    <td><img src="imave.jpg" alt="Maverick" class="img-gira"></td>
+                </tr>
+                <tr>
+                    <td>2017 / Latinoamérica</td>
+                    <td>Pura Sal Tour</td>
+                    <td><img src="sal.jpg" alt="Pura Sal" class="img-gira"></td>
+                </tr>
+                <tr>
+                    <td>2021 / México y Colombia</td>
+                    <td>20/20 Tour</td>
+                    <td><img src="2020.jpg" alt="20/20" class="img-gira"></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="discografia" class="discografia-preview">
+        <h2>Discografía</h2>
+        <div class="album-grid">
+            <div class="album-item">
+                <a href="albun1.html">
+                    <img src="https://i.scdn.co/image/ab67616d0000b273e8afa3bd44f4125ae3769d57" alt="Exterminador">
+                    <p>Exterminador P.1</p>
+                </a>
+            </div>
+            <div class="album-item">
+                <a href="albun2.html">
+                    <img src="https://i1.sndcdn.com/artworks-000094341597-24fk6j-t500x500.jpg" alt="Operación Mundial">
+                    <p>Operación Mundial</p>
+                </a>
+            </div>
+            <div class="album-item">
+                <a href="albun3.html">
+                    <img src="https://i.scdn.co/image/ab67616d0000b2732d7a4451b6df663e7720e26b" alt="Pura Sal">
+                    <p>Pura Sal</p>
+                </a>
+            </div>
+            <div class="album-item">
+                <a href="albun4.html">
+                    <img src="https://i.scdn.co/image/ab67616d00001e028bfa299fb48ce31f22815ab4" alt="Maverick">
+                    <p>Maverick</p>
+                </a>
+            </div>
+        </div>
+    </section>
+</div>
+
+</body>
+</html>
